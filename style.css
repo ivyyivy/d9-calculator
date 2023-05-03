@@ -10,12 +10,13 @@
     grid-template-rows: repeat(5, 1fr);
 }
 
-.input {
+.display {
     box-sizing: border-box;
     grid-column-start: 1;
     grid-column-end: 4;
     border-style: solid;
     text-align: left;
+    font-size: 30px;
     margin: 5px;
     color: black;
     line-height: 40px;
