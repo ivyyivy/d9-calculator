@@ -2,25 +2,31 @@
     width: 500px;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 50px 50px 50px;
+    column-count: 4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50px);
 }
 
 .input {
-    grid-column: 1;
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-style: solid;
     text-align: left;
     margin: 5px;
     color: black;
     line-height: 40px;
     background: white;
     border: 1;
+
 }
 
 [class*="btn-"] {
-    grid-auto-columns: 1;
+    grid-auto-columns: 1/4;
     background: green;
-    color: white(80, 31, 154);
+    color: white;
     text-align: center;
     margin: 3px;
     line-height: 40px;
+
 }
